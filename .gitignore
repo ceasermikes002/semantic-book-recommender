@@ -1,0 +1,36 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment variables
+.env
+.env.*
+
+# Data files (if large or sensitive, otherwise comment out)
+# *.csv
+# *.txt
+
+# System files
+.DS_Store
+Thumbs.db
+
+# VSCode
+.vscode/
+
+# Python virtual environments
+venv/
+.env/
+
+# Logs
+*.log
+
+# Gradio cache
+gradio_cached_examples/
+
+# Misc
+*.swp
+*.bak
