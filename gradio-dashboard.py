@@ -73,7 +73,8 @@ def recommend_books(
         if len(authors_split) == 2:
             authors_str = f"{authors_split[0]} and {authors_split[1]}"
         elif len(authors_split) > 2:
-            authors_str = f"{", ".join(authors_split[:-1])} and {authors_split[-1]}"
+            authors_joined = ", ".join(authors_split[:-1])
+            authors_str = f"{authors_joined} and {authors_split[-1]}"
         else:
             authors_str = row["authors"]
 
