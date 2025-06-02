@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 from dotenv import load_dotenv
+import os
 
 from langchain_community.document_loaders import TextLoader
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
@@ -110,4 +111,5 @@ with gr.Blocks(theme=gr.themes.Glass()) as dashboard:
     submit_button.click(recommend_books, inputs=[user_query, category_dropdown, tone_dropdown], outputs=[output])
 
 if __name__ == '__main__':
-    dashboard.launch()
+    port = int(os.environ.get("PORT", 7860))
+    dashboard.launch(server_name="0.0.0.0", server_port=port)
