@@ -1,0 +1,12 @@
+gradio
+pandas
+numpy
+python-dotenv
+tqdm
+matplotlib
+seaborn
+transformers
+langchain
+langchain-google-genai
+langchain-community
+chromadb
